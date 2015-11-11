@@ -19,7 +19,7 @@ RUN apt-get update && \
   add-apt-repository -y ppa:ondrej/php5-5.6 && \
   add-apt-repository -y ppa:nginx/stable && \
   apt-get update && \
-  DEBIAN_FRONTEND="noninteractive" apt-get install -y --force-yes php5 php5-dev php5-pgsql php5-xdebug php5-curl php5-mcrypt php5-fpm php5-imagick && \
+  DEBIAN_FRONTEND="noninteractive" apt-get install -y --force-yes php5 php5-dev php5-pgsql php5-mysql php5-xdebug php5-curl php5-mcrypt php5-fpm php5-imagick && \
   DEBIAN_FRONTEND="noninteractive" apt-get install -y --force-yes imagemagick phpunit beanstalkd pdftk && \
   DEBIAN_FRONTEND="noninteractive" apt-get install -y nginx && \
   sudo curl -sS https://getcomposer.org/installer | sudo php && \
