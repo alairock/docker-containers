@@ -16,7 +16,7 @@ RUN add-apt-repository -y ppa:nginx/stable
 # Install nginx, postfix, php5 and dependencies
 RUN apt-get -qq update
 RUN apt-get -qqy install --force-yes nginx postfix php5-fpm php5-dev php5-pgsql php5-mysql php5-mcrypt php5-curl php5-imagick php5-gd php5-xdebug php5-cli php5-memcache php5-memcached php5-intl curl imagemagick phpunit beanstalkd pdftk
-RUN curl -sS https://getcomposer.org/installer | sudo php && \
+RUN curl -sS https://getcomposer.org/installer | sudo php
 RUN mv ./composer.phar /usr/local/bin/composer
 
 # Clean up APT when done.
