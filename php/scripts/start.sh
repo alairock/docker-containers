@@ -37,5 +37,6 @@ touch /var/log/nginx-error.log
 mkdir /var/log/nginx
 touch /var/log/nginx/error.log
 touch /var/log/nginx/phpnginx-error.log
+touch /var/log/php5fpm-error.log
 service postfix start ; tail -f /var/log/bootstrap.log
 Status API Training Shop Blog About Pricing
