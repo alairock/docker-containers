@@ -33,5 +33,6 @@ service php5-fpm status
 echo "Starting Postfix..."
 echo "Bootup fine."
 touch /var/log/bootstrap.log
+touch /logs/nginx-error.log
 service postfix start ; tail -f /var/log/bootstrap.log
 Status API Training Shop Blog About Pricing
